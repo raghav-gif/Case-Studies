@@ -6,7 +6,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface UserDAO {
-	List<Product> getAllUsers();
-	
+	List<User> getAllUsers();
+	void registerUser(User user);
+	boolean deleteUser(int id);
+	User findUser(int id);
 
 }

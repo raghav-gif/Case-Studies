@@ -9,6 +9,7 @@ public class User {
 	@Id
 	@GeneratedValue
 	private int userId;
+	private String role;
 	private String userName;
 	private String userEmail;
 	private String userPassword;
@@ -22,6 +23,12 @@ public class User {
 	}
 	public void setUserId(int userId) {
 		this.userId = userId;
+	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
 	}
 	public String getUserName() {
 		return userName;
